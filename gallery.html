@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Gallery ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20261008" />
+  </head>
+  <body>
+    <div class="petal-layer" aria-hidden="true"></div>
+    <nav class="topbar" aria-label="Main navigation">
+      <div class="nav-shell">
+        <div class="brand">Birthday</div>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="message.html">Message</a>
+          <a href="memories.html">Memories</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="celebration.html">Celebration</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <section class="gallery-section section-shell reveal page-section">
+        <div class="section-heading center">
+          <p class="eyebrow">Treasured Portraits</p>
+          <h3>Beautiful Moments in Focus</h3>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item frame-1" data-index="0">
+            <img src="images/photo%201.jpeg" alt="Celebration portrait" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-2" data-index="1">
+            <img src="images/photo%202.jpeg" alt="Smile and warmth" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-3" data-index="2">
+            <img src="images/photo%203.jpeg" alt="Happy family expression" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-4" data-index="3">
+            <img src="images/photo%204.jpeg" alt="A treasured photograph" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-5" data-index="4">
+            <img src="images/photo%205.jpeg" alt="Gentle memory" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-6" data-index="5">
+            <img src="images/photo%206.jpeg" alt="A golden family moment" loading="lazy" />
+          </div>
+          <div class="gallery-item frame-7" data-index="6">
+            <img src="images/extra%20photo.jpeg" alt="Extra photo" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>Made with ❤️ to celebrate someone truly special.</p>
+        <h4>Happy Birthday! 🎂✨</h4>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="close-lightbox" aria-label="Close photo">×</button>
+      <button class="nav-lightbox prev" aria-label="Previous photo">‹</button>
+      <div class="lightbox-image-wrap">
+        <img src="" alt="Expanded memory" id="lightboxImage" />
+      </div>
+      <button class="nav-lightbox next" aria-label="Next photo">›</button>
+    </div>
+
+    <script src="script.js?v=20261008-extra-photo"></script>
+  </body>
+</html>
